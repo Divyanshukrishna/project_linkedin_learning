@@ -25,4 +25,4 @@ urlpatterns = [
     path('',views.home, name="home"),
     path('adoptions/<int:pet_id>/',views.pet_detail,name="pet_detail"),
     
-] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+] + static(settings.STATIC_URL ,document_root=settings.STATIC_ROOT)
